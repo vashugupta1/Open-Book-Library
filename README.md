@@ -11,3 +11,9 @@
 
 - Vanilla CSS
 - ReactJS
+
+## To run the code--
+- clone the repo
+-run command -- npm i
+-then run --  npm run dev -- --open
+-now the code will run on your localhost
