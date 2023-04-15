@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&display=swap");
+
+nav {
+  display: flex;
+  height: 7rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f1f1f;
+  border-radius: 1rem;
+  margin: 1rem 0.5rem 0 0.5rem;
+}
+
+.home-btn,
+.search-bar {
+  margin: 0 2rem;
+}
+
+.home-btn {
+  padding-top: 0.25rem;
+}
+
+.home-btn a {
+  font-size: 2rem;
+  color: #189b6d;
+  text-decoration: none;
+  /* font-family: "Arizonia", cursive; */
+  font-family: "Raleway", sans-serif;
+}
+
+nav input[type="search"] {
+  border-radius: 1.5rem;
+  height: 3rem;
+  width: 20rem;
+  border: none;
+  padding: 0 1.5rem;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+}
+
+nav input[type="search"]:focus {
+  outline: none;
+}
+
+nav .search-bar {
+  position: relative;
+}
+
+nav .search-icon {
+  position: absolute;
+  font-size: 1.75rem;
+  right: 1rem;
+  top: 0.6rem;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: inline;
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    height: 4rem;
+  }
+
+  .home-btn {
+    margin-right: 0.5rem;
+  }
+
+  .home-btn a {
+    font-size: 1.5rem;
+  }
+
+  .search-bar {
+    margin-left: 0.5rem;
+  }
+
+  nav input[type="search"] {
+    height: 2rem;
+    width: 10rem;
+  }
+
+  nav .search-icon {
+    font-size: 1.25rem;
+    top: 0.25rem;
+    right: 0.7rem;
+  }
+}

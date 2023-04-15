@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
+
+.hide {
+  display: none;
+}
+
+.loader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  width: 100%;
+}
+
+.book-main > * {
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+}
+
+.book-main > p {
+  color: rgb(116, 114, 114);
+  font-style: italic;
+}
+
+.book-main > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem 3rem;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 2rem;
+}
+
+.content {
+  margin: 0 1rem;
+}
+
+.content > p {
+  font-size: 2rem;
+  margin-left: 2.5rem;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+}
+
+.book-card {
+  text-align: center;
+  border: 1px solid #88afaf;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-self: center;
+  width: 15rem;
+  height: 100%;
+  box-shadow: 0 5px 6px #9fdfc8;
+}
+
+.book-card > p:first-of-type > span:first-of-type {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.book-card > p:last-of-type {
+  font-size: 0.8rem;
+  justify-self: end;
+}
+
+.book-card > img {
+  height: 10rem;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.book-btn {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: end;
+  margin: 0.5rem 2rem;
+  padding: 0 1rem;
+}
+
+.book-btn > button {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ccf0f0;
+  border: 1px solid #88afaf;
+  border-radius: 0.3rem;
+}
+
+.book-btn > button:enabled {
+  cursor: pointer;
+}
+
+.book-btn > button:enabled:hover {
+  background-color: #189b6d;
+  color: white;
+  font-weight: 600;
+}
+
+.book-btn > button:disabled {
+  border: 1px solid #88afaf;
+  background-color: white;
+}
+
+@media screen and (max-width: 1900px) {
+  .book-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .book-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .book-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .book-list {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .book-btn {
+    justify-content: center;
+  }
+
+  .loader {
+    height: 100vh;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .content > p {
+    font-size: 3rem;
+    margin-left: 0;
+    text-align: center;
+  }
+}

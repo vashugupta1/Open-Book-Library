@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  max-width: 18rem;
+  height: 100%;
+  margin: 1rem 0.5rem 0.5rem 0.5rem;
+  border: 2px solid #1f1f1f;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.sidebar h1 {
+  font-size: 1.75rem;
+  text-align: center;
+  max-width: fit-content;
+  font-family: "Raleway", sans-serif;
+  color: #1f1f1f;
+}
+
+.sidebar input[type="search"] {
+  border-radius: 1.5rem;
+  height: 3rem;
+  width: 15rem;
+  border: none;
+  padding: 0 1rem;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  border: 2px solid #1f1f1f;
+}
+
+.sidebar input[type="search"]:focus {
+  outline: none;
+  border: 3px solid #189b6d;
+}
+
+.sidebar .search-bar {
+  position: relative;
+  margin: 0;
+}
+
+.sidebar .search-icon {
+  position: absolute;
+  font-size: 1.8rem;
+  top: 0.6rem;
+  right: 1.2rem;
+}
+
+.subject-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+}
+
+.subject-btn {
+  padding: 0.8rem;
+  border: none;
+  text-align: center;
+  background-color: #88afaf;
+  border-radius: 1.5rem;
+}
+
+.subject-btn:hover {
+  background-color: #189b6d;
+  color: white;
+  font-weight: 600;
+}
+
+.subject-list a {
+  text-decoration: none;
+  color: #251b37;
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+  .sidebar {
+    max-width: 8rem;
+    display: none;
+  }
+
+  .sidebar h1 {
+    font-size: 1.5rem;
+    max-width: fit-content;
+    text-align: center;
+  }
+
+  .sidebar input[type="search"] {
+    border-radius: 1.5rem;
+    height: 2rem;
+    width: 8rem;
+    font-size: 0.75rem;
+    padding: 0.4rem;
+  }
+
+  .sidebar .search-icon {
+    position: absolute;
+    font-size: 1rem;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+
+  .subject-list {
+    gap: 0.5rem;
+  }
+
+  .subject-btn {
+    padding: 0.75rem;
+  }
+
+  .subject-list a {
+    font-size: 1.1rem;
+  }
+}
